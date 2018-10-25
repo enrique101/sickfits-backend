@@ -1,5 +1,6 @@
 # endpoint: ${env:PRISMA_ENDPOINT}
-endpoint: https://eacuna-sick-fits-production.herokuapp.com/sick-fits-prod/prod
+#endpoint: https://eacuna-sickfits-yoga-prod.herokuapp.com/
+endpoint: https://eacuna-sick-fits-prisma.herokuapp.com/sick-fits-prisma-prod/prod?headers={%22Authorization%22:%22Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDA1Mjg2NjgsIm5iZiI6MTU0MDQ0MjI2OH0.nivPh2BBZYF06jbEeusdfoggNtBtKI1AxPFW6skf3E8%22}
 datamodel: datamodel.prisma
 # Uncomment when deply prod
 # secret: ${env:PRISMA_SECRET}
