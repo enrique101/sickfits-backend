@@ -29,7 +29,7 @@ const Query = {
         const order = await ctx.db.query.order({ where: {id: args.id} }, info);
         const ownsOrder = order.user.id === ctx.request.userId;
         const isAdmin = ctx.request.user.permissions.includes('ADMIN');
-        if(!ownsOrder || !isAdmin){
+        if(!ownsOrder && !isAdmin){
             throw new Error('You don\'t have permission');
         }
 
