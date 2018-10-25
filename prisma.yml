@@ -1,0 +1,8 @@
+#endpoint: ${env:PRISMA_ENDPOINT}
+endpoint: https://eacuna-sick-fits-production.herokuapp.com/sick-fits-prod/prod
+datamodel: datamodel.prisma
+# Uncomment when deply prod
+# secret: ${env:PRISMA_SECRET}
+hooks:
+  post-deploy:
+    - graphql get-schema -p prisma
